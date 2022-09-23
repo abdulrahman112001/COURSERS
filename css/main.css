@@ -352,7 +352,11 @@ h1 {
 .header-carousel .item .text p {
     margin-bottom: 16px;
 }
-
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0 ;
+}
 .header-carousel .owl-dots {
     top: 80%;
     left: 47%;
@@ -364,10 +368,45 @@ h1 {
 /* Header */
 
 .header {
-    box-shadow: rgba(0, 0, 0, 0.08) 0 4px 8px;
-    background-color: #fff;
+    /* box-shadow: rgba(0, 0, 0, 0.08) 0 4px 8px; */
+    background-color: #922980 !important;
     z-index: 10;
     position: relative;
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 1000000;
+    top: 0;
+    /* left: 8px; */
+
+}
+/* @media (max-width:991px) {
+    .header{
+        position: inherit;
+
+
+    }
+    
+} */
+.header-top{
+    /* width: 100%;
+    z-index: 1000000; */
+    top: -120px;
+    transition: 0.5s;
+    /* background-color: #eee !important; */
+}
+.header-bottom{
+    width: 100%;
+    z-index: 1000000;
+    top: 0px;
+    left: 0;
+    transition: 0.5s;
+    background-color: #424143  !important;
+
+
+}
+.header-bottom a{
+    color: black;
 }
 .header  .header-logo {
     margin-left: 75px;
@@ -1126,7 +1165,7 @@ header .header-btns > * {
     /* background-color: #922980; */
     border-radius: 11px;
     font-weight: bolder;
-    color: #de6e45;
+    color: white;
     padding: 6px;
     transition: 0.3s;
 }
@@ -1206,7 +1245,7 @@ header .header-btns > * {
 .testimonials h2 {
     font-size: 36px;
     font-weight: bold;
-    margin: 70px 0;
+    margin: 20px 0;
 }
 
 .testimonials .testimonials-carousel .item {
@@ -6213,3 +6252,13 @@ footer .newsletter picture:first-of-type {
     background-color: #eda426 !important;
 
 }
+/* ///////////// */
+.box-courses{
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.box-courses:hover{
+    background-color: white;
+    box-shadow: #000000;
+    box-shadow: 0 7px 40px rgb(0 0 0 / 5%);}

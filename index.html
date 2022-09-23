@@ -1,222 +1,131 @@
 <!DOCTYPE html>
 <!-- for english make lang en and dir ltr -->
 <html lang="ar" dir="rtl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Elite Student</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Student</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
     <!-- font file -->
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Bootstrap -->
     <!-- uncomment the following line for english  -->
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <!-- comment this line for english -->
-    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="css/simple-calendar.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/simple-calendar.css" />
 
     <!-- fontawesome file -->
-    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/all.css" />
 
     <!-- owl -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
 
     <!-- Main style file -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/testmontial.css">
 
     <style>
-        @media (max-width:650px) {
+      @media (max-width: 650px) {
+        .owl-carousel .owl-nav button.owl-next,
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel button.owl-dot {
+          display: none;
+        }
+      }
 
-            .owl-carousel .owl-nav button.owl-next,
-            .owl-carousel .owl-nav button.owl-prev,
-            .owl-carousel button.owl-dot {
-                display: none;
-            }
-
+      #basic-addon2 {
+        background-color: #922980;
+      }
+      @media (max-width: 650px) {
+        .owl-carousel .owl-nav button.owl-next,
+        .owl-carousel .owl-nav button.owl-prev,
+        .owl-carousel button.owl-dot {
+          display: none;
         }
-
-        #basic-addon2 {
-            background-color: #922980;
+        .text-media {
+          width: 100% !important;
+          text-align: center;
         }
-        @media (max-width:650px) {
-        .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
-            display: none;
-        }
-        .text-media{
-            width: 100% !important;
-            text-align: center;
-        }
-        
-    }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-light header">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/Logo-03.png" width="150" height="75" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">دوراتي</a>
-                    </li>
-                    <li class="nav-item dropdown-courses position-relative">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            دورات
-                        </a>
-                        <ul class="dropdown-menus position-absolute p-2">
-                            <li><a class="dropdown-item" href="#">الدورات المباشرة </a></li>
-                            <li><a class="dropdown-item" href="#">الدورات المسجله </a></li>
-                            <li><a class="dropdown-item" href="#">اللقائات المباشرة </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">تواصل معنا </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"> من نحن </a>
-                    </li>
-
-                </ul>
-                <!-- <div class="text-end header-btns ">
-
-                    <div class="dropdown text-end icons">
-                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownNotification"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <span>4</span>
-                            <i class="far fa-bell"></i>
-                        </a>
-                        <ul class="dropdown-menu text-small" aria-labelledby="dropdownNotification">
-                            <p class="gray order">الجديد</p>
-                            <li class="new">
-                                <a class="dropdown-item" href="#">
-                                    <div class="d-inline-block">
-                                        <picture>
-                                            <source srcset="img/notfication1.png">
-                                            <img src="img/notfication1.png" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="d-inline-block">
-                                        <p>لديك جلسة استشارية اليوم</p>
-                                        <p class="gray">25 دقيقة</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="new">
-                                <a class="dropdown-item" href="#">
-                                    <div class="d-inline-block">
-                                        <picture>
-                                            <source srcset="img/notfication2.png">
-                                            <img src="img/notfication2.png" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="d-inline-block">
-                                        <p>تم رفع مرفق جديد</p>
-                                        <p class="gray">25 دقيقة</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <p class="gray order">الأقدم</p>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <div class="d-inline-block">
-                                        <picture>
-                                            <source srcset="img/notfication3.png">
-                                            <img src="img/notfication3.png" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="d-inline-block">
-                                        <p>لقد انتهيت من الحاضنة</p>
-                                        <p class="gray">2 يوم</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    <div class="d-inline-block">
-                                        <picture>
-                                            <source srcset="img/notfication4.png">
-                                            <img src="img/notfication4.png" alt="">
-                                        </picture>
-                                    </div>
-                                    <div class="d-inline-block">
-                                        <p>تابع لقاء اليوم خطة العمل
-                                            ودراسة الجدوى المالية</p>
-                                        <p class="gray">2 يوم</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+  <body>
 
 
-                    <div class="dropdown text-end user">
-                        <a href="#" class="d-block link-dark text-decoration-none" id="dropdownUser"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <picture>
-                                <source srcset="img/user-icon.png">
-                                <img src="img/user-icon.png" class="rounded-circle" width="32" height="32">
-                            </picture>
-                        </a>
-                        <ul style="    transform: translateX(160px);" class="dropdown-menu text-small"
-                            aria-labelledby="dropdownUser">
-                            <li><a class="dropdown-item" href="#">دوراتي</a></li>
-                            <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
-                            <li><a class="dropdown-item" href="#">اعدادات الحساب</a></li>
+    
 
-                            <li><a class="dropdown-item" href="#">كوني مدربة</a></li>
-                            <li><a class="dropdown-item" href="#">كوني شريكة(معلنة)</a></li>
-                            <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
-                        </ul>
-                    </div>
-
-
-                </div> -->
-
-                <!-- <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form> -->
-            </div>
-            <div class="text-end header-btns">
-                <a href="/" class="font-13 grean">حساب جديد</a>
-                <a href="/" class="font-13 btn btn-primary ">تسجيل الدخول</a>
-            </div>
-        </div>
-    </nav>
     <main>
-      
- 
-        <div class="container">
-            <div style="margin-top: 120px;" class="landing-page ">
-                <div class="row justify-content-between align-items-center c">
-
-                    <div class="col-12 col-md-6 w-50 text-media">
-                        <h1 style="font-size: 54px;" >بناء الخاصة بك التدريب على الحياة التجارية</h1>
-                        <p style="font-size: 25px;" >مجرد وضوح ، وأدوات قوية ، وخطة لعبة ، ودعم لا مثيل له ، والمساءلة ، وبعض الإنصاف العرق.</p>
+        <nav id="header-nav-bar" class="navbar navbar-expand-lg bg-light header p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/Logo-01.png" width="150" height="85" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon border-0 shadwo-0">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">دوراتي</a>
+                        </li>
+                        <li class="nav-item dropdown-courses position-relative">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                دورات
+                            </a>
+                            <ul class="dropdown-menus position-absolute p-2">
+                                <li><a class="dropdown-item" href="#">الدورات المباشرة </a></li>
+                                <li><a class="dropdown-item" href="#">الدورات المسجله </a></li>
+                                <li><a class="dropdown-item" href="#">اللقائات المباشرة </a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">تواصل معنا </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> من نحن </a>
+                        </li>
     
-    
-                    </div>
-                    <!-- <div class="col-md-4">
-                        <img class=" rounded-3" src="img/pexels-artem-podrez-4492135.jpg" alt="" width="400" height="300">
-                    </div> -->
-                    <div class="col-md-4 ">
+                    </ul>
+             
+                <div class="text-end header-btns">
+                    <a href="/" class="font-13 grean text-white fw-bolder">حساب جديد</a>
+                    <a href="/" class="font-13 btn btn-primary ">تسجيل الدخول</a>
+                </div>
+            </div>
+        </nav> 
+      <div style="background-color: #922981">
+        <div style="padding: 172px 0" class="landing-page container">
+          <div class="row justify-content-between align-items-center c">
+            <div class="col-12 col-md-6 text-media">
+              <h1 style="font-size: 54px" class="text-white">
+                بناء الخاصة بك التدريب على الحياة التجارية
+              </h1>
+              <p style="font-size: 25px" class="text-white">
+                مجرد وضوح ، وأدوات قوية ، وخطة لعبة ، ودعم لا مثيل له ،
+                والمساءلة ، وبعض الإنصاف العرق.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <img class="rounded-3 img-fluid" src="img/bg-sec.png" alt="" />
+            </div>
+            <!-- <div class="col-md-4 ">
                     <div class="person-carousel owl-carousel owl-theme">
                         <div class="item">
                             <img class=" rounded-circle" src="img/pexels-artem-podrez-4492135.jpg" alt="" width="400" height="350">
@@ -231,137 +140,304 @@
 
                         </div>
                      </div>
-                    </div>
-                </div>
-
+                    </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row about justify-content-between align-items-center mt-5">
+          <div class="about-text col-md-5">
+            <h2 class="about-header">الثانوية العامة</h2>
+            <p>
+              الثانوية العامة أو المدرسة الثانوية هي الشهادة التي يحصل عليها
+              الطالب بعد إتمامه مرحلة التعليم الثانوي. والتي تأهله للتعليم
+              الجامعي. الشهادات التالية للثانوية العامة هي: الدبلوم فوق المتوسط
+              أو البكالوريوس وقد يليه الماجستير والدكتوراه.
+            </p>
+            <button class="btn about-header text-white">اقرا المزيد</button>
+          </div>
+          <div class="image text-start col-md-5 bag-img">
+            <div class="">
+              <img
+                style="width: 100%"
+                src="img/pexels-karolina-grabowska-4491461.jpg"
+                alt=""
+              />
             </div>
-            <div class="row  about justify-content-between align-items-center mt-5  ">
-                <div class="about-text col-md-5 ">
-                    <h2 class="about-header">
-                        الثانوية العامة
-                    </h2>
-                    <p>
-                        الثانوية العامة أو المدرسة الثانوية هي الشهادة التي يحصل عليها الطالب بعد إتمامه مرحلة التعليم الثانوي. والتي تأهله للتعليم الجامعي. الشهادات التالية للثانوية العامة هي: الدبلوم فوق المتوسط أو البكالوريوس وقد يليه الماجستير والدكتوراه.
-                    </p>
-                </div>
-                <div class="image text-start  col-md-5 bag-img">
-                    <div class="">
-                        <img style="width: 100%;" src="img/pexels-karolina-grabowska-4491461.jpg" alt="">
-                    </div>
-                </div>
-                
+          </div>
+        </div>
+        <div class="row about justify-content-between align-items-center mt-2">
+          <div class="image text-start col-md-5 bag-img">
+            <div class="">
+              <img
+                style="width: 100%"
+                src="img/pexels-karolina-grabowska-4218864.jpg"
+                alt=""
+              />
             </div>
-            <div class="row  about justify-content-between align-items-center mt-2">
-                <div class="image text-start col-md-5 bag-img">
-                    <div class="">
-                        <img style="width: 100%;" src="img/pexels-karolina-grabowska-4218864.jpg" alt="">
-                    </div>
+          </div>
+          <div class="about-text col-md-5">
+            <h2 class="message-header mt-4">اختبار الامارات القياسية</h2>
+            <p>
+              ما هو ال EmSAT؟ اختبار الكتروني مبني على المعايير الوطنية لقياس
+              وتقييم أداء طلبة الصف الثاني عشر في دولة الامارات العربية المتحدة
+              في (اللغة العربية – اللغة الإنجليزية – الرياضيات - الفيزياء -
+              الأحياء – الكيمياء –علوم الحاسوب ) يدار الاختبار في المراكز
+              المعتمدة من قبل وزارة التربية والتعليم.
+            </p>
+            <button class="btn about-header text-white">اقرا المزيد</button>
+          </div>
+        </div>
+        <div class="row why-riadiat">
+          <div class="col-12 p-0">
+            <h2>لماذا نحن</h2>
+          </div>
+          <div class="p-0">
+            <div class="row m-auto">
+              <div class="col-md-4 reason text-start text-center">
+                <div>
+                  <img
+                    style="width: 100px"
+                    class="rounded-circle"
+                    src="img/reason-1.png"
+                    alt=""
+                  />
                 </div>
-                <div class="about-text col-md-5">
-                    <h2 class="message-header mt-4">
-                        اختبار الامارات القياسية 
-                    </h2>
-                    <p>
-                        ما هو ال EmSAT؟
-                        اختبار الكتروني مبني على المعايير الوطنية لقياس وتقييم أداء طلبة الصف الثاني عشر في دولة الامارات العربية المتحدة في (اللغة العربية – اللغة الإنجليزية – الرياضيات - الفيزياء - الأحياء – الكيمياء –علوم الحاسوب ) يدار الاختبار في المراكز المعتمدة من قبل وزارة التربية والتعليم.
-                    </p>
+                <h5>فريق متخصص</h5>
+                <p>
+                  في مجال ريادة الأعمال والتسويق والتخطيط والمالية والابتكار
+                  والتميز من الموظفات والمدربات والمرشدات والمستشارات.
+                </p>
+              </div>
+              <div class="col-md-4 reason text-start text-center">
+                <div>
+                  <img
+                    style="width: 100px"
+                    class="rounded-circle"
+                    src="img/reason-2.png"
+                    alt=""
+                  />
                 </div>
+                <h5>استشارات عن بُعد</h5>
+                <p>مع مجموعة من المستشارين ذوي الخبرة في مجالات الريادة</p>
+              </div>
+              <div class="col-md-4 reason text-start text-center">
+                <div>
+                  <img
+                    style="width: 100px"
+                    class="rounded-circle"
+                    src="img/reason-3.png"
+                    alt=""
+                  />
+                </div>
+                <h5>خدمات عن بعد</h5>
+                <p>
+                  نقدم خدمات متكاملة لكل رائدة أعمال في مكان واحد ومنصة واحدة عن
+                  بعد طوال الأسبوع.
+                </p>
+              </div>
+              <div class="col-md-4 reason text-start text-center">
+                <div>
+                  <img
+                    style="width: 100px"
+                    class="rounded-circle"
+                    src="img/reason-4.png"
+                    alt=""
+                  />
+                </div>
+                <h5>اكاديمية إلكترونية</h5>
+                <p>
+                  توفر مجموعة من الدورات الاحترافية يقدمها مدربون على مستوى عال
+                  من الخبرة لتقديم الأدوات والمعرفة اللازمة لتبدأ طريقك الريادي
+                </p>
+              </div>
+              <div class="col-md-4 reason text-start text-center">
+                <div>
+                  <img
+                    style="width: 100px"
+                    class="rounded-circle"
+                    src="img/reason-5.png"
+                    alt=""
+                  />
+                </div>
+                <h5>منصة موحدة</h5>
+                <p>
+                  تجمع المدربين والمستشارين والمرشدين و الرياديات والمستثمرات
+                  والموردين والباعة والمشترين
+                </p>
+              </div>
+              <div class="col-md-4 reason text-start text-center">
+                <div>
+                  <img
+                    style="width: 100px"
+                    class="rounded-circle"
+                    src="img/reason-6.png"
+                    alt=""
+                  />
+                </div>
+                <h5>شبكة اجتماعية</h5>
+                <p>
+                  من رياديات الأعمال السعوديات والخليجيات والمستثمرات وبإمكانك
+                  الاستفادة من رائدات الأعمال من حولك
+                </p>
+              </div>
             </div>
-            <div class="row why-riadiat">
-                <div class="col-12 p-0">
-                    <h2>لماذا نحن</h2>
-                </div>
-                <div class=" p-0">
-                    <div class="row m-auto ">
-                        <div class=" col-md-4 reason text-start text-center">
-                            <div>
-
-                                <img style="width:100px" class="rounded-circle" src="img/reason-1.png" alt="">
-                            </div>
-                            <h5>
-                                فريق متخصص
-                            </h5>
-                            <p>
-                                في مجال ريادة الأعمال والتسويق والتخطيط والمالية والابتكار والتميز من الموظفات والمدربات
-                                والمرشدات والمستشارات.
-                            </p>
-                        </div>
-                        <div class=" col-md-4 reason text-start text-center">
-                            <div>
-
-                                <img style="width:100px" class="rounded-circle" src="img/reason-2.png" alt="">
-                            </div>
-                            <h5>
-                                استشارات عن بُعد
-                            </h5>
-                            <p>
-                                مع مجموعة من المستشارين ذوي الخبرة في مجالات الريادة
-                            </p>
-                        </div>
-                        <div class=" col-md-4 reason text-start text-center">
-                            <div>
-
-                                <img style="width:100px" class="rounded-circle" src="img/reason-3.png" alt="">
-                            </div>
-                            <h5>
-                                خدمات عن بعد
-                            </h5>
-                            <p>
-                                نقدم خدمات متكاملة لكل رائدة أعمال في مكان واحد ومنصة واحدة عن بعد طوال الأسبوع.
-                            </p>
-                        </div>
-                        <div class=" col-md-4 reason text-start text-center">
-                            <div>
-
-                                <img style="width:100px" class="rounded-circle" src="img/reason-4.png" alt="">
-                            </div>
-                            <h5>
-                                اكاديمية إلكترونية
-                            </h5>
-                            <p>
-                                توفر مجموعة من الدورات الاحترافية يقدمها مدربون على مستوى عال من الخبرة لتقديم الأدوات
-                                والمعرفة اللازمة لتبدأ طريقك الريادي
-                            </p>
-                        </div>
-                        <div class=" col-md-4 reason text-start text-center">
-                            <div>
-
-                                <img style="width:100px" class="rounded-circle" src="img/reason-5.png" alt="">
-                            </div>
-                            <h5>
-                                منصة موحدة
-                            </h5>
-                            <p>
-                                تجمع المدربين والمستشارين والمرشدين و الرياديات والمستثمرات والموردين والباعة والمشترين
-                            </p>
-                        </div>
-                        <div class="col-md-4 reason text-start text-center">
-                            <div>
-
-                                <img style="width:100px" class="rounded-circle" src="img/reason-6.png" alt="">
-                            </div>
-                            <h5>
-                                شبكة اجتماعية
-                            </h5>
-                            <p>
-                                من رياديات الأعمال السعوديات والخليجيات والمستثمرات وبإمكانك الاستفادة من رائدات الأعمال
-                                من حولك
-                            </p>
-                        </div>
-                    </div>
-                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="courses">
+            <div
+              class="row mx-0 courses-header row-cols-auto justify-content-between align-items-center"
+            >
+              <h3>أحدث الدورات عبر الإنترنت</h3>
+              <a href="#" class="btn btn-white-outlined"> عرض دوراتي </a>
             </div>
-            <div class="row">
-                <div class="courses">
-                    <div class="row mx-0 courses-header row-cols-auto justify-content-between align-items-center">
-                        <h3>  الرائج الان
-                        </h3>
-                        <a href="#" class="btn btn-white-outlined">
-                            عرض دوراتي
-                        </a>
+            <div>
+              <div class="row text-center" >
+                <div class="box-courses col-md-6 mt-5">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="image col-auto">
+                      <img
+                        class="rounded-circle"
+                        src="img/riada-accountant.png"
+                        alt=""
+                        width="170px"
+                        height="170px "
+                      />
                     </div>
+                    <div class="col-md-auto">
+                      <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                      <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+                      <div>
+                        <span>
+                          <span class="me-3">
+                            <span>6</span>
+                            <span
+                              ><i class="meta-icon far fa-file-alt"></i
+                            ></span>
+                            <span>درسا</span>
+                          </span>
+                          <span>
+                            <span>40</span>
+                            <i class="fa-solid fa-user"></i>
+                            <span>الطلاب</span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-courses col-md-6 mt-5">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="image col-auto">
+                      <img
+                        class="rounded-circle"
+                        src="img/riada-create.png"
+                        alt=""
+                        width="170px"
+                        height="170px "
+                      />
+                    </div>
+                    <div class="col-md-auto">
+                      <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                      <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+                      <div>
+                        <span>
+                          <span class="me-3">
+                            <span>6</span>
+                            <span
+                              ><i class="meta-icon far fa-file-alt"></i
+                            ></span>
+                            <span>درسا</span>
+                          </span>
+                          <span>
+                            <span>40</span>
+                            <i class="fa-solid fa-user"></i>
+                            <span>الطلاب</span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-courses col-md-6 mt-5">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="image col-auto">
+                      <img
+                        class="rounded-circle"
+                        src="img/feature-blog.png"
+                        alt=""
+                        width="170px"
+                        height="170px "
+                      />
+                    </div>
+                    <div class="col-md-auto">
+                      <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                      <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+                      <div>
+                        <span>
+                          <span class="me-3">
+                            <span>6</span>
+                            <span
+                              ><i class="meta-icon far fa-file-alt"></i
+                            ></span>
+                            <span>درسا</span>
+                          </span>
+                          <span>
+                            <span>40</span>
+                            <i class="fa-solid fa-user"></i>
+                            <span>الطلاب</span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-courses col-md-6 mt-5">
+                  <div class="row align-items-center justify-content-center">
+                    <div class="image col-auto">
+                      <img
+                        class="rounded-circle"
+                        src="img/main-blog.png"
+                        alt=""
+                        width="170px"
+                        height="170px "
+                      />
+                    </div>
+                    <div class="col-md-auto">
+                      <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                      <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+                      <div>
+                        <span>
+                          <span class="me-3">
+                            <span>6</span>
+                            <span
+                              ><i class="meta-icon far fa-file-alt"></i
+                            ></span>
+                            <span>درسا</span>
+                          </span>
+                          <span>
+                            <span>40</span>
+                            <i class="fa-solid fa-user"></i>
+                            <span>الطلاب</span>
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="m-auto text-center mt-5">
+                  <button
+                    style="background-color: #922980"
+                    class="btn text-white p-3"
+                  >
+                    عرض جميع الدورات
+                  </button>
+                </div>
+              </div>
+            </div>
 
-                    <div class="courses-carousel owl-carousel owl-theme">
+            <!-- <div class="courses-carousel owl-carousel owl-theme">
                         <div class="item">
                             <div class=" mx-0">
                                 <div class="row">
@@ -622,11 +698,11 @@
                             </div>
 
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </div> -->
+          </div>
+        </div>
 
-            <!-- <div class="row riadiat-numbers">
+        <!-- <div class="row riadiat-numbers">
                 <h2>
                     منصتنا في أرقام
                 </h2>
@@ -788,8 +864,8 @@
                     </div>
                 </div>
             </div> -->
-        </div>
-        <!-- <section class="container  "style="margin-top: 100px;">
+      </div>
+      <!-- <section class="container  "style="margin-top: 100px;">
 
             <div class="row m-0">
                 <div class="col-md-12 card schedule-card">
@@ -834,146 +910,214 @@
                 </div>
             </div>
         </section> -->
-
-        <div class="container">
-            <div class="row testimonials">
-                <h2>
-                    اراء طلابنا </h2>
-                <div class="testimonials-carousel p-0 owl-carousel owl-theme ">
-                    
-
-                            <div class="testimonial ">
-                                <div class="pic">
-                                  <img src="https://images.pexels.com/photos/704955/pexels-photo-704955.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
-                                </div>
-                                <p class="description">
-                                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate nisi in
-                                  fermentum. Vivamus ac libero quis nisi auctor pulvinar. Aenean sit amet lectus posuere,
-                                  mattis massa eget, ullamcorper diam. Nunc sit amet felis eget arcu congue dictum.
-                                </p>
-                                <h3 class="title"> ايناس علي</h3>
-                                <!-- <small class="post">- Archietect</small> -->
-                            </div>
-                            <div class="testimonial ">
-                            <div class="pic">
-                                <img src="https://images.pexels.com/photos/704955/pexels-photo-704955.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
-                            </div>
-                            <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada vulputate nisi in
-                                fermentum. Vivamus ac libero quis nisi auctor pulvinar. Aenean sit amet lectus posuere,
-                                mattis massa eget, ullamcorper diam. Nunc sit amet felis eget arcu congue dictum.
-                            </p>
-                            <h3 class="title"> مريم ابراهيم</h3>
-                            <!-- <small class="post">طارق يحي</small> -->
-                            </div>
-                        
-                  
-                        
-                        
-
-                
-                   
+        <section class="testmon">
+            <div class="wrapper">
+                <h1 >كيفية التسجيل ؟</h1>
+                <div class="timeline">
+                  <dl class="timeline--entry">
+                    <dt class="timeline--entry__title">ابحث عن الدورات التي تحتاجها
+                    </dt>
+                    <dd class="timeline--entry__detail">من قائمة الدورات في الشريط العلوي اختر الدروة التي تحتاجها ثم اضغط عليها
+                    </dd>
+                  </dl>
+                  <dl class="timeline--entry">
+                    <dt class="timeline--entry__title">شاهد عينة من الدروات
+                    </dt>
+                    <dd class="timeline--entry__detail">بعض الدورات يتاح لك قبل التسجيل فيها أن تشاهد درساً للاطّلاع والتأكد من جودة الاتصال لديك ومعرفة طريقة الشرح مثل دورة الاستب ودورات القدرات</dd>
+                  </dl>
+                  <dl class="timeline--entry">
+                    <dt class="timeline--entry__title">اشترك بالدورة</dt>
+                    <dd class="timeline--entry__detail">من خلال الضغط على شراء هذه الدورة ستنتقل لتفاصيل الفاتورة قم بتعبئة البيانات ثم اضغط على التالي</dd>
+                  </dl>
+                  <dl class="timeline--entry">
+                    <dt class="timeline--entry__title">مراجعة الطلب</dt>
+                    <dd class="timeline--entry__detail">تأكد من الدورة المطلوبة ثم اضغط على التالي
+                    </dd>
+                  </dl>
+                  <dl class="timeline--entry">
+                    <dt class="timeline--entry__title">تفاصيل الدفع</dt>
+                    <dd class="timeline--entry__detail">قم باختيار طريقة الدفع حسب اختيارك ( مدى - فيزا - حوالة مصرفية - سداد ) ثم اضغط على اشترك بالدورة الآن وقم بتعبئة بيانات بطاقة مدى أو فيزا أو بياناتك في خدمة سداد ثم اضغط ادفع</dd>
+                  </dl>
                 </div>
+              </div>
+    
+        </section>
+      <div class="container">
+        <div class="row testimonials">
+          <h2>اراء طلابنا</h2>
+          <div class="testimonials-carousel p-0 owl-carousel owl-theme">
+            <div class=" ">
+              <div class="box-courses bg-white w-75 mt-5 m-auto">
+                <div class="row align-items-center">
+                  <div class="image col-md-2">
+                    <img
+                      style="width: 120px"
+                      class="rounded-circle"
+                      src="img/client@2x.png"
+                      alt=""
+                      width="120px"
+                      height="120px "
+                    />
+                  </div>
+                  <div class="col-md-10">
+                    <p>
+                      العمل معMaxCoach يشبه وجود فرد من العائلة يمكنه إصلاح كل
+                      شيء. إنهم يعرفون ما تحتاج إليه بالضبط عندما تحتاج إليه.
+                    </p>
+                    <small class="fs-6 fw-bolder"> FLORENCE THEMES </small>
+                    <p>/ Ahmed ALi</p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <div class=" ">
+              <div class="box-courses bg-white w-75 mt-5 m-auto">
+                <div class="row align-items-center">
+                  <div class="image col-md-2">
+                    <img
+                      style="width: 120px"
+                      class="rounded-circle"
+                      src="img/client@2x.png"
+                      alt=""
+                      width="120px"
+                      height="120px "
+                    />
+                  </div>
+                  <div class="col-md-10">
+                    <p>
+                      العمل معMaxCoach يشبه وجود فرد من العائلة يمكنه إصلاح كل
+                      شيء. إنهم يعرفون ما تحتاج إليه بالضبط عندما تحتاج إليه.
+                    </p>
+                    <small class="fs-6 fw-bolder"> FLORENCE THEMES </small>
+                    <p>/ Ahmed ALi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" ">
+              <div class="box-courses bg-white w-75 mt-5 m-auto">
+                <div class="row align-items-center">
+                  <div class="image col-md-2">
+                    <img
+                      style="width: 120px"
+                      class="rounded-circle"
+                      src="img/client@2x.png"
+                      alt=""
+                      width="120px"
+                      height="120px "
+                    />
+                  </div>
+                  <div class="col-md-10">
+                    <p>
+                      العمل معMaxCoach يشبه وجود فرد من العائلة يمكنه إصلاح كل
+                      شيء. إنهم يعرفون ما تحتاج إليه بالضبط عندما تحتاج إليه.
+                    </p>
+                    <small class="fs-6 fw-bolder"> FLORENCE THEMES </small>
+                    <p>/ Ahmed ALi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-        <!-- ////////////////////////////////////////////////////////// -->
 
-        
+
+      <!-- ////////////////////////////////////////////////////////// -->
     </main>
     <footer>
-        <div class="container-fluid">
-            <div class="row justify-content-between row-cols-auto">
-                <div class="">
-                    <a href="/"
-                        class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-                            <img src="img/Logo-01.png" width="150" height="75" alt="">
-                    </a>
-                    <div class="social mt-3">
-                        <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                    </div>
-                    <div class="policy-links">
-                        <a href="#">
-                            شروط الاستخدام
-                        </a>
-                        <a href="#">
-                            سياسة الخصوصية
-                        </a>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="row justify-content-between nav row-cols-auto">
-                        <div>
-                            <h6>الشركة</h6>
-                            <a href="#" class="d-block">من نحن</a>
-                            <a href="#" class="d-block">مقارنة الخدمات</a>
-                        </div>
-                        <div>
-                            <h6> قناة ELITE</h6>
-                            <a href="#" class="d-block">المدونة</a>
-                            <a href="#" class="d-block">البودكاست</a>
-                            <a href="#" class="d-block">قصص نجاح</a>
-                        </div>
-                        <div>
-                            <h6>انضمي إلينا</h6>
-                            <a href="#" class="d-block">التوظيف</a>
-                            <a href="#" class="d-block">التسويق بالعمولة</a>
-                        </div>
-                        <div>
-                            <h6>الدعم</h6>
-                            <a href="#" class="d-block">الأسئلة الشائعة</a>
-                            <a href="#" class="d-block">تواصل معنا</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="newsletter">
-                    <h6>اشترك  بالدورات  الاونلاين</h6>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="البريد الإلكتروني"
-                            aria-describedby="button-addon2">
-                        <button class="btn btn-primary" type="button" id="button-addon2">
-                            <i class="fas fa-chevron-left"></i>
-                        </button>
-                    </div>
-                    <picture>
-                        <source srcset="img/app-store.png">
-                        <img src="img/app-store.png" alt="">
-                    </picture>
-                    <picture>
-                        <source srcset="img/play-store.png">
-                        <img src="img/play-store.png" alt="">
-                    </picture>
-                </div>
+      <div class="container-fluid">
+        <div class="row justify-content-between row-cols-auto">
+          <div class="">
+            <a
+              href="/"
+              class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
+            >
+              <img src="img/Logo-01.png" width="150" height="75" alt="" />
+            </a>
+            <div class="social mt-3">
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-facebook"></i>
+              </a>
             </div>
+            <div class="policy-links">
+              <a href="#"> شروط الاستخدام </a>
+              <a href="#"> سياسة الخصوصية </a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row justify-content-between nav row-cols-auto">
+              <div>
+                <h6>الشركة</h6>
+                <a href="#" class="d-block">من نحن</a>
+                <a href="#" class="d-block">مقارنة الخدمات</a>
+              </div>
+              <div>
+                <h6>قناة ELITE</h6>
+                <a href="#" class="d-block">المدونة</a>
+                <a href="#" class="d-block">البودكاست</a>
+                <a href="#" class="d-block">قصص نجاح</a>
+              </div>
+              <div>
+                <h6>انضمي إلينا</h6>
+                <a href="#" class="d-block">التوظيف</a>
+                <a href="#" class="d-block">التسويق بالعمولة</a>
+              </div>
+              <div>
+                <h6>الدعم</h6>
+                <a href="#" class="d-block">الأسئلة الشائعة</a>
+                <a href="#" class="d-block">تواصل معنا</a>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter">
+            <h6>اشترك بالدورات الاونلاين</h6>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="البريد الإلكتروني"
+                aria-describedby="button-addon2"
+              />
+              <button class="btn btn-primary" type="button" id="button-addon2">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+            </div>
+            <picture>
+              <source srcset="img/app-store.png" />
+              <img src="img/app-store.png" alt="" />
+            </picture>
+            <picture>
+              <source srcset="img/play-store.png" />
+              <img src="img/play-store.png" alt="" />
+            </picture>
+          </div>
         </div>
+      </div>
     </footer>
-
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/lightbox.js"></script>
-    
+
     <!-- Bootstrap -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- owl -->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/all.min.js"></script>
 
     <!-- Main script file -->
     <script src="js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

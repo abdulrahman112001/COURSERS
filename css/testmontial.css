@@ -1,0 +1,144 @@
+
+.testmon {
+  /* background-color: #444444; */
+  font-size: 0.875em;
+  color: #212121;
+  line-height: 1.5;
+}
+
+.testmon .wrapper {
+  margin: 3.125em auto;
+  padding: 1em 5em 1em;
+  /* max-width: 1000px; */
+}
+
+
+
+/* - &:nth-child(1) {
+			 grid-area: entry1;
+		 }
+   - useful timesaver if there is a lengthy list
+*/
+.testmon  .timeline {
+  line-height: 1.5em;
+  font-size: 14px;
+  transition: all 0.4s ease;
+  position: relative;
+  counter-reset: section;
+}
+.testmon .timeline:before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #b8540b;
+  position: absolute;
+  top: 0;
+  left: -3.313em;
+  border-radius: 40px 40px;
+}
+
+.testmon .timeline--entry {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 7px 40px rgb(0 0 0 / 5%);}
+
+
+.testmon .timeline--entry__title {
+  color: #922980;
+  /* background-color: #ec407a; */
+  /* font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif; */
+  font-weight: 900;
+  font-size: 1rem;
+  padding: 0.5em 1em;
+}
+.testmon .timeline--entry__title:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    /* top:0; */
+    right: -1em;
+    border-right: 10px solid #fff;
+    box-shadow: 0 7px 40px rgb(0 0 0 / 5%);
+    transform: rotate(180deg);
+  }
+
+
+
+.testmon .timeline--entry__detail {
+  /* background-color: #dddddd; */
+  padding: 1em;
+  margin: 0;
+}
+.testmon .timeline--entry:before {
+  content: "";
+  font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3em;
+  height: 3em;
+  background-color: #922980;
+  border: 0.2em solid white;
+  border-radius: 50%;
+  position: absolute;
+  counter-increment: section;
+  content: counter(section);
+  text-shadow: 0 1px 0 #424242;
+  left: -4.5em;
+}
+
+@supports (display: grid) {
+  @media (min-width: 768px) {
+    .testmon .timeline {
+      display: grid;
+      grid-gap: 4.75em;
+      grid-template-areas: ".  entry1" "entry2  ." ". entry3" "entry4 ." ". entry5";
+    }
+    .testmon  .timeline:before {
+      left: 49.5%;
+    }
+
+    .testmon  .timeline--entry:nth-child(1) {
+      grid-area: entry1;
+    }
+    .testmon  .timeline--entry:nth-child(2) {
+      grid-area: entry2;
+    }
+    .testmon   .timeline--entry:nth-child(3) {
+      grid-area: entry3;
+    }
+    .testmon   .timeline--entry:nth-child(4) {
+      grid-area: entry4;
+    }
+    .testmon  .timeline--entry:nth-child(5) {
+      grid-area: entry5;
+    }
+    .testmon  .timeline--entry:nth-of-type(odd):before {
+      right: -3.8em;
+    }
+    .testmon     .timeline--entry:nth-of-type(even):not(:nth-of-type(odd)) .timeline--entry__title:before {
+      right: 100%;
+      border-left: 10px solid #fff;
+      box-shadow: 0 7px 40px rgb(0 0 0 / 5%);
+
+      border-right: 0;
+    }
+    .testmon   .timeline--entry:nth-of-type(even):before {
+      right: 103%;
+    }
+  }
+}
+@media (min-width: 768px){
+
+  @supports (display: grid){
+
+    .testmon .timeline--entry:nth-of-type(odd):before {
+        right: -3.5em;
+    }
+  }
+}

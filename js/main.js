@@ -1,3 +1,28 @@
+
+var topBTN = document.getElementById("header-nav-bar")
+
+
+window.addEventListener("scroll",function(){
+    // console.log("window is scrolling");
+
+    if (document.documentElement.scrollTop > 10) {
+        topBTN.classList.add("header-top") ;
+        if(document.documentElement.scrollTop > 500){
+             topBTN.classList.add("header-bottom")
+        }else{
+            topBTN.classList.remove("header-bottom")
+
+        }
+    }
+    else  topBTN.classList.remove("header-top")
+})
+
+
+
+
+
+
+
 function addTag(e,input) {
     if(e.which == 13 && input.value) {
         $('.team-members').append('<span>'+ input.value +'</span>')
