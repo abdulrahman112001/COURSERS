@@ -67,7 +67,7 @@
     transform: rotate(180deg);
   }
 
-
+  
 
 .testmon .timeline--entry__detail {
   /* background-color: #dddddd; */
@@ -141,5 +141,13 @@
     .testmon .timeline--entry:nth-of-type(odd):before {
         right: -3.5em;
     }
+  }
+}
+
+@media (max-width:767px) {
+  .testmon .timeline--entry__title:before {
+    top: 14px;
+    right: 100%;
+    transform: rotate(0);
   }
 }

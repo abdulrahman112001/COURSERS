@@ -377,7 +377,7 @@ h1 {
     transition: 0.5s;
     z-index: 1000000;
     top: 0;
-    /* left: 8px; */
+    left: 8px;
 
 }
 /* @media (max-width:991px) {
@@ -760,6 +760,18 @@ header .header-btns > * {
 .home-accademy p {
     color: #fff;
     font-size: 16px;
+}
+@media (max-width:992px) {
+    .navbar-collapse{
+        background: rgb(237, 143, 45);
+        color: bisque;
+        padding: 5px 10px;
+        border: 0;
+    }
+    .btn-primary, .btn-primary:hover {
+        background-color: #922981;
+        border: 1px solid #eda426;
+    }
 }
 
 .courses {
