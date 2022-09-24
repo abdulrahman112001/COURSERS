@@ -40,7 +40,8 @@
 .testmon .timeline--entry {
   position: relative;
   background-color: #fff;
-  box-shadow: 0 7px 40px rgb(0 0 0 / 5%);}
+  box-shadow: 0 7px 40px rgb(0 0 0 / 5%);
+}
 
 
 .testmon .timeline--entry__title {
