@@ -147,7 +147,7 @@
   @supports (display: grid){
 
     .testmon .timeline--entry:nth-of-type(odd):before {
-      right: 17em;
+      right: calc(50% - 48px);
       top: -40px;
     }
   }

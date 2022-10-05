@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<!-- for english make lang en and dir ltr -->
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elite Student</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+    <!-- font file -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <!-- uncomment the following line for english  -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <!-- comment this line for english -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <link rel="stylesheet" href="css/simple-calendar.css" />
+
+    <!-- fontawesome file -->
+    <link rel="stylesheet" href="css/all.css" />
+
+    <!-- owl -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+
+    <!-- Main style file -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/testmontial.css">
+
+    <style>
+
+    </style>
+  </head>
+
+  <body class="body">
+
+    <main>
+      <nav id="header-nav-bar" class="navbar navbar-expand-lg bg-light header p-0  header-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img id="logo" src="img/Logo-04.png" width="230" height="80" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon border-0 shadwo-0">
+                    <i class="fa-solid fa-bars"></i>
+                </span>
+            </button>
+            <div id="navbar-link" class="collapse navbar-collapse test" id="navbarSupportedContent">
+                <ul   class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 m-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark active" aria-current="page" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">دوراتي</a>
+                    </li>
+                    <li class="nav-item dropdown-courses position-relative">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            دورات
+                        </a>
+                        <ul class="dropdown-menus position-absolute p-2">
+                            <li><a class="dropdown-item" href="#">الدورات المباشرة </a></li>
+                            <li><a class="dropdown-item" href="#">الدورات المسجله </a></li>
+                            <li><a class="dropdown-item" href="#">اللقائات المباشرة </a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">تواصل معنا </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#"> من نحن </a>
+                    </li>
+
+                </ul>
+         
+            <div class="text-end header-btns">
+                <a href="/" class="font-13 grean  fw-bolder text-dark">حساب جديد</a>
+                <a href="/" class="font-13 btn btn-primary text-white ">تسجيل الدخول</a>
+            </div>
+        </div>
+    </nav> 
+    <div class="edu-breadcrumb-area" style="margin-top: 150px ;" >
+        <div class="container">
+            <div class="breadcrumb-inner">
+                <div class="page-title text-center">
+                    <h1 class="title">معلومات عن المدرب</h1>
+                </div>
+   
+            </div>
+        </div>
+        <!-- <ul class="shape-group">
+            <li class="shape-1">
+                <span></span>
+            </li>
+            <li class="shape-2 scene"><img data-depth="2" src="img/shape-13.png" alt="shape"></li>
+            <li class="shape-3 scene"><img data-depth="-2" src="img/shape-15.png" alt="shape"></li>
+            <li class="shape-4">
+                <span></span>
+            </li>
+            <li class="shape-5 scene"><img data-depth="2" src="img/shape-07.png" alt="shape"></li>
+        </ul> -->
+    </div>
+    <div style="margin-top: 150px ;"  class="edu-team-details-area section-gap-equal ">
+        <div class="container">
+            <div class="row row--40">
+                <div class="col-lg-4">
+                    <div class="team-details-thumb">
+                        <div class="thumbnail">
+                            <img  class="rounded-circle" src="img/person.jpg" alt="team" width="300" height="300">
+                        </div>
+                        <ul class="social-share">
+                            <li><a href="#"><i class="icon-share-alt"></i></a></li>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin2"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="team-details-content">
+                        <div class="main-info">
+                            <span class="subtitle">مدرب</span>
+                            <h3 class="title">عبد الرحمن الشيخ </h3>
+                            <span class="designation">مهندس برمجيات</span>
+                            <ul class="team-meta d-flex gap-3">
+                                <li class="d-flex gap-2 border-end px-2">
+                                    <i class="fa-solid fa-user"></i>
+                                       20 طالب
+                                </li>
+                                <li class="d-flex gap-2">
+                                    <div class="rating">
+                                        <i style="color: #f8b81f !important;" class="fa-solid fa-star"></i>
+                                        <i style="color: #f8b81f !important;" class="fa-solid fa-star"></i>
+                                        <i style="color: #f8b81f !important;" class="fa-solid fa-star"></i>
+                                        <i style="color: #f8b81f !important;" class="fa-solid fa-star"></i>
+                                        <i style="color: #f8b81f !important;" class="fa-solid fa-star"></i>
+
+                                    </div>
+                                    <span class="rating-count">(720 تقيم)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bio-describe">
+                            <h4 class="title">معلومات عن المدرب</h4>
+                            <p>تدريب الطفل على اساسيات الكهرباء.والبرمجة عملى من سن 8 سنوات ليواكب التطور التكنولوجى وتم تدريب نحو 250 طفل على مستوى محافظة بنى سويف .مصر .وتم عمل مشاريع مثل الروبوت كار..اشارات المرور ..التحكم بالانارة عن طريق الصوت ...وعن طريق الريموت..الموبايل اعداد مدربين قادرين على فتح مشروعات خاصة بهم تدريس لعلم البرمجة للأطفال
+
+                            </p>
+                            <p>تدريب الطفل على اساسيات الكهرباء.والبرمجة عملى من سن 8 سنوات ليواكب التطور التكنولوجى وتم تدريب نحو 250 طفل على مستوى محافظة بنى سويف .مصر .وتم عمل مشاريع مثل الروبوت كار..اشارات المرور ..التحكم بالانارة عن طريق الصوت ...وعن طريق الريموت..الموبايل اعداد مدربين قادرين على فتح مشروعات خاصة بهم تدريس لعلم البرمجة للأطفال
+
+                            </p>
+                        </div>
+                  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section  style="margin-top: 150px ;" class="container">
+        <h2 class="text-center -5">
+          جميع الدورات
+        </h2>
+        <div class="row mb-5">
+            <div class="col-md-4 mt-5 ">
+                <div class="-sm p-0 m-0 Allcourser">
+
+                    <div class="img-Allcourser">
+                        <img class="rounded-1 m-auto" src="img/main-blog.png" alt="" width="380" height="230">
+                    </div>
+                    <div class="p-3 ">
+
+                        <div class="pt-3">
+                            <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                            <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+    
+                        </div>
+                        <div class="pt-3">
+                            <span>
+                              <span class="me-5">
+                                <span>6</span>
+                                <span
+                                  ><i class="meta-icon far fa-file-alt"></i
+                                ></span>
+                                <span>درسا</span>
+                              </span>
+                              <span>
+                                <span>40</span>
+                                <i class="fa-solid fa-user"></i>
+                                <span>الطلاب</span>
+                              </span>
+                            </span>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 mt-5 ">
+                <div class="-sm p-0 m-0 Allcourser">
+
+                    <div class="img-Allcourser">
+                        <img class="rounded-1 m-auto" src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2019/11/course-02-480x298.jpg" alt="" width="380" height="230">
+                    </div>
+                    <div class="p-3 ">
+
+                        <div class="pt-3">
+                            <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                            <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+    
+                        </div>
+                        <div class="pt-3">
+                            <span>
+                              <span class="me-5">
+                                <span>6</span>
+                                <span
+                                  ><i class="meta-icon far fa-file-alt"></i
+                                ></span>
+                                <span>درسا</span>
+                              </span>
+                              <span>
+                                <span>40</span>
+                                <i class="fa-solid fa-user"></i>
+                                <span>الطلاب</span>
+                              </span>
+                            </span>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 mt-5 ">
+                <div class="-sm p-0 m-0 Allcourser">
+
+                    <div class="img-Allcourser">
+                        <img class="rounded-1 m-auto" src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2019/11/stock-full-hd-04-480x298.jpg" alt="" width="380" height="230">
+                    </div>
+                    <div class="p-3 ">
+
+                        <div class="pt-3">
+                            <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                            <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+    
+                        </div>
+                        <div class="pt-3">
+                            <span>
+                              <span class="me-5">
+                                <span>6</span>
+                                <span
+                                  ><i class="meta-icon far fa-file-alt"></i
+                                ></span>
+                                <span>درسا</span>
+                              </span>
+                              <span>
+                                <span>40</span>
+                                <i class="fa-solid fa-user"></i>
+                                <span>الطلاب</span>
+                              </span>
+                            </span>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 mt-5 ">
+                <div class="-sm p-0 m-0 Allcourser">
+
+                    <div class="img-Allcourser">
+                        <img class="rounded-1 m-auto" src="img/main-blog.png" alt="" width="380" height="230">
+                    </div>
+                    <div class="p-3 ">
+
+                        <div class="pt-3">
+                            <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                            <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+    
+                        </div>
+                        <div class="pt-3">
+                            <span>
+                              <span class="me-5">
+                                <span>6</span>
+                                <span
+                                  ><i class="meta-icon far fa-file-alt"></i
+                                ></span>
+                                <span>درسا</span>
+                              </span>
+                              <span>
+                                <span>40</span>
+                                <i class="fa-solid fa-user"></i>
+                                <span>الطلاب</span>
+                              </span>
+                            </span>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 mt-5 ">
+                <div class="-sm p-0 m-0 Allcourser">
+
+                    <div class="img-Allcourser">
+                        <img class="rounded-1 m-auto" src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2019/11/stock-full-hd-04-480x298.jpg" alt="" width="380" height="230">
+                    </div>
+                    <div class="p-3 ">
+
+                        <div class="pt-3">
+                            <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                            <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+    
+                        </div>
+                        <div class="pt-3">
+                            <span>
+                              <span class="me-5">
+                                <span>6</span>
+                                <span
+                                  ><i class="meta-icon far fa-file-alt"></i
+                                ></span>
+                                <span>درسا</span>
+                              </span>
+                              <span>
+                                <span>40</span>
+                                <i class="fa-solid fa-user"></i>
+                                <span>الطلاب</span>
+                              </span>
+                            </span>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 mt-5 ">
+                <div class="-sm p-0 m-0 Allcourser">
+
+                    <div class="img-Allcourser">
+                        <img class="rounded-1 m-auto" src="https://maxcoach.thememove.com/main/wp-content/uploads/sites/1/2019/11/course-featured-image-01-480x298.jpg" alt="" width="380" height="230">
+                    </div>
+                    <div class="p-3 ">
+
+                        <div class="pt-3">
+                            <h4 style="color: #eda426" class="fw-bolder">59.00</h4>
+                            <h4 class="fw-bolder">مقدم في لغة الجافا سكربت</h4>
+    
+                        </div>
+                        <div class="pt-3">
+                            <span>
+                              <span class="me-5">
+                                <span>6</span>
+                                <span
+                                  ><i class="meta-icon far fa-file-alt"></i
+                                ></span>
+                                <span>درسا</span>
+                              </span>
+                              <span>
+                                <span>40</span>
+                                <i class="fa-solid fa-user"></i>
+                                <span>الطلاب</span>
+                              </span>
+                            </span>
+                          </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="m-auto text-center mt-5">
+                <button
+                  style="background-color: #922980"
+                  class="btn text-white p-3"
+                >
+                <a href="all-courses.html">  
+                    عرض  المزيد
+                </a>
+                </button>
+              </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    
+</main>
+<footer >
+    <div class="container-fluid">
+      <div class="row justify-content-between row-cols-auto">
+        <div class="">
+          <a
+            href="/"
+            class="d-flex header-logo align-items-center mb-2 mb-lg-0 text-dark text-decoration-none"
+          >
+            <img src="img/Logo-04.png" width="250" height="75" alt="" />
+          </a>
+          <div class="social mt-3">
+            <a href="#">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+          <div class="policy-links">
+            <a href="#"> شروط الاستخدام </a>
+            <a href="#"> سياسة الخصوصية </a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="row justify-content-between nav row-cols-auto">
+            <div>
+              <h6>الشركة</h6>
+              <a href="#" class="d-block">من نحن</a>
+              <a href="#" class="d-block">مقارنة الخدمات</a>
+            </div>
+            <div>
+              <h6>قناة ELITE</h6>
+              <a href="#" class="d-block">المدونة</a>
+              <a href="#" class="d-block">البودكاست</a>
+              <a href="#" class="d-block">قصص نجاح</a>
+            </div>
+            <div>
+              <h6>انضمي إلينا</h6>
+              <a href="#" class="d-block">التوظيف</a>
+              <a href="#" class="d-block">التسويق بالعمولة</a>
+            </div>
+            <div>
+              <h6>الدعم</h6>
+              <a href="#" class="d-block">الأسئلة الشائعة</a>
+              <a href="#" class="d-block">تواصل معنا</a>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter">
+          <h6>اشترك بالدورات الاونلاين</h6>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="البريد الإلكتروني"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-primary" type="button" id="button-addon2">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+          </div>
+          <picture>
+            <source srcset="img/app-store.png" />
+            <img src="img/app-store.png" alt="" />
+          </picture>
+          <picture>
+            <source srcset="img/play-store.png" />
+            <img src="img/play-store.png" alt="" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <script src="js/lightbox.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- owl -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/all.min.js"></script>
+
+  <!-- Main script file -->
+  <script src="js/main.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
