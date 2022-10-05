@@ -41,6 +41,8 @@
   position: relative;
   background-color: #fff;
   box-shadow: 0 7px 40px rgb(0 0 0 / 5%);
+  left: 50%;
+  top: 36%;
 }
 
 
@@ -65,6 +67,7 @@
     border-right: 10px solid #fff;
     box-shadow: 0 7px 40px rgb(0 0 0 / 5%);
     transform: rotate(180deg);
+    display: none;
   }
 
   
@@ -109,12 +112,14 @@
     }
     .testmon  .timeline--entry:nth-child(2) {
       grid-area: entry2;
+      left: -62%;
     }
     .testmon   .timeline--entry:nth-child(3) {
       grid-area: entry3;
     }
     .testmon   .timeline--entry:nth-child(4) {
       grid-area: entry4;
+      left: -62%;
     }
     .testmon  .timeline--entry:nth-child(5) {
       grid-area: entry5;
@@ -123,23 +128,27 @@
       right: -3.8em;
     }
     .testmon     .timeline--entry:nth-of-type(even):not(:nth-of-type(odd)) .timeline--entry__title:before {
-      right: 100%;
+      left: -62%;
       border-left: 10px solid #fff;
       box-shadow: 0 7px 40px rgb(0 0 0 / 5%);
 
       border-right: 0;
+      display: none;
     }
     .testmon   .timeline--entry:nth-of-type(even):before {
-      right: 103%;
+      right: 41.5%;
+      top: -39%;
     }
   }
 }
+
 @media (min-width: 768px){
 
   @supports (display: grid){
 
     .testmon .timeline--entry:nth-of-type(odd):before {
-        right: -3.5em;
+      right: 17em;
+      top: -40px;
     }
   }
 }
@@ -149,5 +158,8 @@
     top: 14px;
     right: 100%;
     transform: rotate(0);
+  }
+  .testmon .timeline--entry{
+    left: -1%;
   }
 }
