@@ -1,7 +1,19 @@
 /* general */
+@font-face{
+  font-family: "Bukra";
+  font-family: "Araboto ";
+  src: url("../fonts/alfont_com_AlFont_com_4_CA.ttf");
+  src: url("../fonts/alfont_com_AlFont_com_Araboto-Normal.ttf");
+}
 * {
+
   text-decoration: none;
   list-style: none;
+  /*font-family: "Bukra ";*/
+}
+h1,h2,h3,h4,h5,h6{
+  /*font-family: "Araboto" !important;*/
+
 }
 
 .x {
@@ -168,8 +180,8 @@ a:hover {
 }
 
 input:checked[type="checkbox"] {
-  background-color: #1fb9b3 !important;
-  border-color: #1fb9b3 !important;
+  background-color: #922980  !important;
+  border-color: #922980  !important;
 }
 
 .green {
@@ -301,13 +313,27 @@ h1 {
   width: 42px;
   height: 42px;
 }
-
-.owl-nav button span {
+.owl-nav button  span {
   font-size: 25px;
+  position: absolute;
+  top: -3px;
+  left: 10px;
+  right: 11px;
+
+
+}
+.owl-nav button > span {
+  font-size: 25px;
+  position: absolute;
+  top: -3px;
+  left: 10px;
+
+
 }
 
 .owl-nav button:hover span {
   font-size: 31px;
+  
 }
 
 .owl-nav [class*="owl-"]:hover {
@@ -387,7 +413,7 @@ h1 {
   transition: 0.5s;
   z-index: 1000000;
   top: 0;
-  left: 8px;
+  /* left: 8px; */
 }
 /* @media (max-width:991px) {
     .header{
@@ -403,6 +429,9 @@ h1 {
   top: -120px;
   transition: 0.5s;
   /* background-color: #eee !important; */
+      background-color: #f5f7f7 !important;
+    box-shadow: 0px 0 22px -19px;
+
 }
 .header-bottom {
   width: 100%;
@@ -410,7 +439,7 @@ h1 {
   top: 0px;
   left: 0;
   transition: 0.5s;
-  background-color: #eee !important;
+      background-color: #f5f7f7 !important;
 }
 .header-bottom a {
   color: black !important;
@@ -436,12 +465,13 @@ h1 {
   /* display: none; */
   transform: rotateX(90deg);
   z-index: 10000;
-  background-color: #ed8f2d;
+  background-color: #f5f7f7;
   border-radius: 10px;
   transition: 0.3s;
+  box-shadow: 0 0 26px -16px;
 }
-.navbar .dropdown-menus li a {
-  color: white;
+.navbar .dropdown-menus li a :hover {
+  color: white !important ;
 }
 
 .navbar .dropdown-courses:hover .dropdown-menus {
@@ -1179,8 +1209,8 @@ header .header-btns > * {
 }
 
 .navbar .nav-item .nav-link:hover {
-  background-color: #922980;
-  color: white;
+  /* background-color: #922980; */
+  color: #922980 !important;
 }
 
 .riadiat-numbers .nav .nav-item:last-of-type .nav-link img {
@@ -3695,8 +3725,8 @@ header .header-btns > * {
 }
 
 .form-check-input:checked {
-  background-color: transparent;
-  border-color: #fff;
+  background-color: #9229b9;
+  border-color: #9229b9;
 }
 
 .special-radio input:checked + label {
@@ -9266,4 +9296,126 @@ a.edu-btn, button.edu-btn {
 }
 .body:hover .shape-group{
   transform: translate(30px,15px) !important;
+}
+
+
+/* //// */
+.dropCoustmer{
+  position: absolute;
+  left: -91%;
+  top: -11px;
+  z-index: 99999999999999;
+  border-radius: 10px;
+  transition: 0.3s;
+  padding: 5px;
+  transform: rotateY(-90deg);
+  background-color: #f5f7f7;
+
+  box-shadow: 0 0 26px -16px;
+}
+.dropCoustmer li a{
+  /* padding: 0.25rem 1rem; */
+  transform: rotateY(0deg);
+
+}
+.dropdown-item.link:hover  .dropCoustmer{
+  transform: rotateY(0deg);
+
+}
+.dropdown-item:focus, .dropdown-item:hover {
+  background-color: #922981;
+}
+
+.offcanvas {
+    z-index: 9999999;
+  }
+
+.active-star{
+  color: #f4c150;
+}
+.offcanvas-start {
+
+  width: 332px;}
+ .offcanvas-body::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+ .offcanvas-body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+ .offcanvas-body::-webkit-scrollbar-thumb {
+    background: #922980 ;
+  }
+  
+  /* Handle on hover */
+ .offcanvas-body::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  .modal-backdrop{
+    background-color: transparent;
+  }
+  .modal{
+    overflow-x: initial;
+    overflow-y: inherit;
+  }
+  .modal-content {
+
+    border-radius: 1rem;}
+
+    .landing div .img{
+      width: 600px;
+      transition: var(--main-transition);
+      position: relative;
+      animation: any 3s linear infinite;
+  
+  }
+  .landing div.one{
+     left: 0%;
+    top: 50%;
+    width: fit-content;
+
+  }
+  .landing div.two{
+       right: 0%;
+    top: 40%;
+    width: fit-content;
+
+  }
+  @media ( max-width:992px ){
+      .landing div img{
+          width: 300px;
+          padding-top: 50px;
+      }
+      
+  }
+  @keyframes any {
+      0%,100%{
+          top: 0px;
+      }
+      50%{
+          top: -50px;
+      }
+  }
+@media (max-width:460px) {
+  .img-bg-header{
+    margin: 20px 0;
+  }
+  
+  .img-bg-header  div.one{
+    display: none;
+  
+  }
+  .img-bg-header   div.two{
+    display: none;
+  
+  }
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999999;
 }

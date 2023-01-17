@@ -13,6 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Bootstrap -->
     <!-- uncomment the following line for english  -->
@@ -61,10 +62,19 @@
   <body>
 
     <main>
-        <nav id="header-nav-bar" class="navbar navbar-expand-lg bg-light header p-0">
+
+      <!-- 
+edits 
+- clear backround login 
+- padding let right in login 
+- rounded in login 
+
+       -->
+      <!-- no login -->
+     <!-- <nav id="header-nav-bar" class="navbar navbar-expand-lg bg-light header p-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img id="logo" src="img/Logo-01.png" width="230" height="80" alt="">
+                    <img id="logo" src="img/Logo-01.png"  width="150" height="90" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -102,14 +112,93 @@
                     </ul>
              
                 <div class="text-end header-btns">
-                    <a href="/" class="font-13 grean text-white fw-bolder">حساب جديد</a>
-                    <a href="/" class="font-13 btn btn-primary ">تسجيل الدخول</a>
+                    <a href="/" class="font-13 grean text-white fw-bolder"data-bs-toggle="modal" data-bs-target="#staticBackdropRegester">حساب جديد</a>
+                    <a href="/" class="font-13 btn btn-primary " data-bs-toggle="modal" data-bs-target="#staticBackdrop">تسجيل الدخول</a>
                 </div>
             </div>
-        </nav> 
+        </nav>  -->
+        <!-- logging -->
+      <nav id="header-nav-bar" class="navbar navbar-expand-lg bg-light header p-0">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img id="logo" src="img/Logo-01.png" width="150" height="90" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon border-0 shadwo-0">
+                      <i class="fa-solid fa-bars"></i>
+                  </span>
+              </button>
+              <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul   class="navbar-nav me-auto mb-2 mb-lg-0 gap-3 m-auto ">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">الرئيسية</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">دوراتي</a>
+                      </li>
+                      <li class="nav-item dropdown-courses position-relative">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                              aria-expanded="false">
+                              دورات
+                          </a>
+                          <ul class="dropdown-menus position-absolute p-2">
+                              <li class="dropdown-item link position-relative " >
+                                <a href="#"  role="button" data-bs-toggle="dropdown" class="text-dark">
+                                  الدورات المباشرة 
+                                  <ul class="dropCoustmer p-1">
+                                    <li><a href="" class="dropdown-item text-dark  p-2" > المستوى الاول </a></li>
+                                    <li><a href="" class=" dropdown-item text-dark  p-2" > المستوى الثاني </a></li>
+                                  </ul>
+                                </a>
+                              </li>
+                              <li  class="dropdown-item link position-relative" >
+                                <a  href="#"  role="button" data-bs-toggle="dropdown" class="text-dark">
+                                
+                                الدورات المسجله 
+
+                                <ul class="dropCoustmer p-1">
+                                  <li><a href="" class="dropdown-item text-dark  p-2" > المستوى الاول </a></li>
+                                  <li><a href="" class=" dropdown-item text-dark  p-2" > المستوى الثاني </a></li>
+                                  <li><a href="" class=" dropdown-item text-dark  p-2" > المستوى الثاني </a></li>
+                                  <li><a href="" class=" dropdown-item text-dark  p-2" > المستوى الثاني </a></li>
+                                </ul>
+                              </a>
+                            </li>
+                              <li><a class="dropdown-item text-dark" href="#" >اللقائات المباشرة </a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">تواصل معنا </a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#"> من نحن </a>
+                      </li>
+  
+                  </ul>
+
+           
+              <div class="text-end header-btns">
+                <div class="nav-item dropdown-courses position-relative">
+
+                  <a href=""  type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img class="rounded-circle " src="img/person.jpg" alt="" width="40" >
+                  </a>
+                  <ul class="dropdown-menus position-absolute p-2 end-0">
+                    <li><a class="dropdown-item btn btn-primary " href="#">تسجيل الخروج </a></li>
+                    <li><a class="dropdown-item" href="#">حسابي</a></li>
+                    <li><a class="dropdown-item" href="#">الاعدادات</a></li>
+                  </ul>
+                </div>
+                
+              </div>
+          </div>
+      </nav> 
+
       <div style="background-color: #922981">
-        <div style="padding: 195px 13px" class="landing-page container">
-          <div class="row justify-content-between align-items-center c">
+        <div style="padding: 260px 13px" class="landing-page landing container position-relative">
+          <div class="row justify-content-between align-items-center ">
             <div class="col-12 col-md-6 text-media">
               <h1 style="font-size: 54px" class="text-white">
                 بناء الخاصة بك التدريب على الحياة التجارية
@@ -119,31 +208,28 @@
                 والمساءلة ، وبعض الإنصاف العرق.
               </p>
             </div>
-            <div class="col-md-6">
-              <img class="rounded-3 img-fluid" src="img/bg-sec.png" alt="" />
+            <div   class="col-md-6 position-relative img-bg-header">
+              <div  style="position: absolute; top: -83px;
+              z-index: 99999999;">
+
+                <img style="width: 100%;" class="rounded-3  landing col-12 col-md-6" src="img/bg-sec.png" alt="" />
+              </div>
+              <div style="z-index: 9999999;" class="position-absolute  one">
+                <img style="width: 100px;" class="img " src="img/shape-40.png" alt="" >
+  
+              </div>
+              <div style="z-index: 9999999;" class="position-absolute  two">
+                <img style="width: 150px;" class="img " src="img/shape-35.png" alt="" >
+  
+              </div>
             </div>
-            <!-- <div class="col-md-4 ">
-                    <div class="person-carousel owl-carousel owl-theme">
-                        <div class="item">
-                            <img class=" rounded-circle" src="img/pexels-artem-podrez-4492135.jpg" alt="" width="400" height="350">
-
-                        </div>
-                        <div class="item">
-                            <img class=" rounded-circle" src="img/pexels-artem-podrez-4492135.jpg" alt="" width="400" height="350">
-
-                        </div>
-                        <div class="item">
-                            <img class=" rounded-circle" src="img/pexels-artem-podrez-4492135.jpg" alt="" width="400" height="350">
-
-                        </div>
-                     </div>
-                    </div> -->
           </div>
+   
         </div>
       </div>
       <div class="container">
-        <div class="row about justify-content-between align-items-center mt-5">
-          <div class="about-text col-md-5">
+        <div class="row about justify-content-between align-items-center mt-5" >
+          <div class="about-text col-md-5" >
             <h2 class="about-header">الثانوية العامة</h2>
             <p>
               الثانوية العامة أو المدرسة الثانوية هي الشهادة التي يحصل عليها
@@ -156,7 +242,7 @@
               <button class="btn about-header text-white ">اقرا المزيد</button>
             </div>
           </div>
-          <div class="image text-start col-md-5 bag-img">
+          <div class="image text-start col-md-5 bag-img" >
             <div class="">
               <img
                 style="width: 100%"
@@ -166,7 +252,7 @@
             </div>
           </div>
         </div>
-        <div class="row about justify-content-between align-items-center mt-2">
+        <div class="row about justify-content-between align-items-center mt-2" >
           <div class="image text-start col-md-5 bag-img">
             <div class="">
               <img
@@ -176,7 +262,7 @@
               />
             </div>
           </div>
-          <div class="about-text col-md-5">
+          <div class="about-text col-md-5"  >
             <h2 class="message-header mt-4">اختبار الامارات القياسية</h2>
             <p>
               ما هو ال EmSAT؟ اختبار الكتروني مبني على المعايير الوطنية لقياس
@@ -195,7 +281,43 @@
           <div class="row">
             <h3> مكتبتي </h3>
             <div class="col-md-12 row gap-5 justify-content-evenly mt-1">
-              <div class="col-sm-6 col-md-3 bg- shadow text-center p-2 mt-5">
+              <div class="col-sm-6 col-md-3 bg- shadow text-center p-2 mt-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="thumbnail"  >
+                    <img src="https://booklife-resized.s3-us-west-1.amazonaws.com/00249547903f1aab83a75c43be557399-w204@1x.jpg" class="img-responsive" width="250" height="200">
+                    <div class="caption">
+                        <div class="row">
+                            <div class=" col-xs-6 price">
+                              <p>
+                                <label class="mt-3 fw-bolder">اساسيات البرمجه</label>
+                              </p>
+                                <p>
+                                    <label style="color: #eda426;" class=" fw-bolder">$649.99</label>
+                                  </p>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center gap-1 ">
+                            <div class="">
+                                <a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> تفاصيل</a> 
+                            </div>
+                            <div class="">
+                                <a style="background-color: #922980;" href="#" class="btn btn-product text-white">
+                                  <span class="glyphicon glyphicon-shopping-cart">
+ 
+                                    <small>
+
+                                      <i class="fa-solid fa-cart-shopping"></i>
+                                    </small>
+
+                                </span > 
+                                </a>
+                            </div>
+                        </div>
+
+                        <p> </p>
+                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-3 bg- shadow text-center p-2 mt-5" data-aos="fade-up" data-aos-duration="2000">
                 <div class="thumbnail" >
                     <img src="https://booklife-resized.s3-us-west-1.amazonaws.com/00249547903f1aab83a75c43be557399-w204@1x.jpg" class="img-responsive" width="250" height="200">
                     <div class="caption">
@@ -231,43 +353,7 @@
                     </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-md-3 bg- shadow text-center p-2 mt-5">
-                <div class="thumbnail" >
-                    <img src="https://booklife-resized.s3-us-west-1.amazonaws.com/00249547903f1aab83a75c43be557399-w204@1x.jpg" class="img-responsive" width="250" height="200">
-                    <div class="caption">
-                        <div class="row">
-                            <div class=" col-xs-6 price">
-                              <p>
-                                <label class="mt-3 fw-bolder">اساسيات البرمجه</label>
-                              </p>
-                                <p>
-                                    <label style="color: #eda426;" class=" fw-bolder">$649.99</label>
-                                  </p>
-                            </div>
-                        </div>
-                        <div class="d-flex justify-content-center gap-1 ">
-                            <div class="">
-                                <a class="btn btn-primary btn-product"><span class="glyphicon glyphicon-thumbs-up"></span> تفاصيل</a> 
-                            </div>
-                            <div class="">
-                                <a style="background-color: #922980;" href="#" class="btn btn-product text-white">
-                                  <span class="glyphicon glyphicon-shopping-cart">
- 
-                                    <small>
-
-                                      <i class="fa-solid fa-cart-shopping"></i>
-                                    </small>
-
-                                </span > 
-                                </a>
-                            </div>
-                        </div>
-
-                        <p> </p>
-                    </div>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-3 bg- shadow text-center p-2 mt-5">
+              <div class="col-sm-6 col-md-3 bg- shadow text-center p-2 mt-5" data-aos="fade-up" data-aos-duration="3000">
                 <div class="thumbnail" >
                     <img src="https://booklife-resized.s3-us-west-1.amazonaws.com/00249547903f1aab83a75c43be557399-w204@1x.jpg" class="img-responsive" width="250" height="200">
                     <div class="caption">
@@ -325,7 +411,7 @@
           </div>
           <div class="p-0">
             <div class="row m-auto">
-              <div class="col-md-4 reason text-start text-center">
+              <div class="col-md-4 reason text-start text-center" data-aos="fade-up" data-aos-duration="1000">
                 <div>
                   <img
                     style="width: 100px"
@@ -340,7 +426,7 @@
                   والتميز من الموظفات والمدربات والمرشدات والمستشارات.
                 </p>
               </div>
-              <div class="col-md-4 reason text-start text-center">
+              <div class="col-md-4 reason text-start text-center" data-aos="fade-up" data-aos-duration="1000">
                 <div>
                   <img
                     style="width: 100px"
@@ -352,7 +438,7 @@
                 <h5>استشارات عن بُعد</h5>
                 <p>مع مجموعة من المستشارين ذوي الخبرة في مجالات الريادة</p>
               </div>
-              <div class="col-md-4 reason text-start text-center">
+              <div class="col-md-4 reason text-start text-center" data-aos="fade-up" data-aos-duration="1000">
                 <div>
                   <img
                     style="width: 100px"
@@ -367,7 +453,7 @@
                   بعد طوال الأسبوع.
                 </p>
               </div>
-              <div class="col-md-4 reason text-start text-center">
+              <div class="col-md-4 reason text-start text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-duration="1000">
                 <div>
                   <img
                     style="width: 100px"
@@ -382,7 +468,7 @@
                   من الخبرة لتقديم الأدوات والمعرفة اللازمة لتبدأ طريقك الريادي
                 </p>
               </div>
-              <div class="col-md-4 reason text-start text-center">
+              <div class="col-md-4 reason text-start text-center" data-aos="fade-up" data-aos-duration="1000">
                 <div>
                   <img
                     style="width: 100px"
@@ -397,7 +483,7 @@
                   والموردين والباعة والمشترين
                 </p>
               </div>
-              <div class="col-md-4 reason text-start text-center">
+              <div class="col-md-4 reason text-start text-center" data-aos="fade-up" data-aos-duration="1000">
                 <div>
                   <img
                     style="width: 100px"
@@ -425,7 +511,7 @@
             </div>
             <div>
               <div class="row text-center" >
-                <div class="box-courses col-md-6 mt-5">
+                <div class="box-courses col-md-6 mt-5" data-aos="fade-up" data-aos-duration="1000">
                   <div class="row align-items-center justify-content-center">
                     <div class="image col-auto">
                       <img
@@ -458,7 +544,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="box-courses col-md-6 mt-5">
+                <div class="box-courses col-md-6 mt-5" data-aos="fade-up" data-aos-duration="1000">
                   <div class="row align-items-center justify-content-center">
                     <div class="image col-auto">
                       <img
@@ -491,7 +577,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="box-courses col-md-6 mt-5">
+                <div class="box-courses col-md-6 mt-5" data-aos="fade-up" data-aos-duration="1000">
                   <div class="row align-items-center justify-content-center">
                     <div class="image col-auto">
                       <img
@@ -524,7 +610,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="box-courses col-md-6 mt-5">
+                <div class="box-courses col-md-6 mt-5" data-aos="fade-up" data-aos-duration="1000">
                   <div class="row align-items-center justify-content-center">
                     <div class="image col-auto">
                       <img
@@ -569,460 +655,34 @@
               </div>
             </div>
 
-            <!-- <div class="courses-carousel owl-carousel owl-theme">
-                        <div class="item">
-                            <div class=" mx-0">
-                                <div class="row">
-                                    <div class="col-md-6">
-    
-                                        <a href="https://www.w3schools.com/html/mov_bbb.mp4" class="html5lightbox px-0">
-                                            <div>
-                                                <img src="img/home-course.png" alt="" width="169" height="120">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                        <h4 class="text-bold fw-bolder">العمل الحر     </h4>
-                                        <p style="background-color: #de6e45;" class="tag ">
-                                            مدة الدورة ساعتين
-                                        </p>
-                                        <p style="background-color: #922980;" class="tag border   mt-2">
-                                         التسويق
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="text col">
-                                
-                                    <div>
-                                        <div class="row client mt-3">
-                                            <div class="row align-items-center gap-2 col-md-7">
-                                                <div class="col-3">
-                                                    <img style="width: 40px;" class="imges-circle-small" src="img/client.png" alt="" >
-                                                </div>
-                                                <div class="info col-8">
-                                                    <small>Ahmed Salman</small>
-                                                </div>
-                                            </div>
-                                            <div style="border: 1px solid #de6e45" class="text-center  mt-2 col-md-5">
-    
-                                                <a style="color: #de6e45; ;" href="#" class=" grean fw-bolder text-center p-2">
-                                                    <span>
-                                                  
-                                                        500 
-                                                        <span>
-                                                            درهم                             
-                                                        </span>
-                                                       
-                                                    </span>
-                                                    
-                                                   
-                                                   </a>
-                                            </div>
-                                        </div>
-                                    
-                                        <div style="background-color: #de6e45;"  class="text-center border mt-2 p-1">
-    
-                                            <a  href="#" class=" grean fw-bolder text-center p-2 text-white">
-                                                شراء
-                                                <i class="fa-solid fa-cart-shopping px-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                               
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="item">
-                            <div class=" mx-0">
-                                <div class="row">
-                                    <div class="col-md-6">
-    
-                                        <a href="https://www.w3schools.com/html/mov_bbb.mp4" class="html5lightbox px-0">
-                                            <div>
-                                                <img src="img/home-course.png" alt="" width="169" height="120">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                        <h4 class="text-bold fw-bolder">العمل الحر     </h4>
-                                        <p style="background-color: #de6e45;" class="tag ">
-                                            مدة الدورة ساعتين
-                                        </p>
-                                        <p style="background-color: #922980;" class="tag border   mt-2">
-                                         التسويق
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="text col">
-                                
-                                    <div>
-                                        <div class="row client mt-3">
-                                            <div class="row align-items-center gap-2 col-md-7">
-                                                <div class="col-3">
-                                                    <img style="width: 40px;" class="imges-circle-small" src="img/client.png" alt="" >
-                                                </div>
-                                                <div class="info col-8">
-                                                    <small>Ahmed Salman</small>
-                                                </div>
-                                            </div>
-                                            <div style="border: 1px solid #de6e45" class="text-center  mt-2 col-md-5">
-    
-                                                <a style="color: #de6e45; ;" href="#" class=" grean fw-bolder text-center p-2">
-                                                    <span>
-                                                  
-                                                        500 
-                                                        <span>
-                                                            درهم                             
-                                                        </span>
-                                                       
-                                                    </span>
-                                                    
-                                                   
-                                                   </a>
-                                            </div>
-                                        </div>
-                                    
-                                        <div style="background-color: #de6e45;"  class="text-center border mt-2 p-1">
-    
-                                            <a  href="#" class=" grean fw-bolder text-center p-2 text-white">
-                                                شراء
-                                                <i class="fa-solid fa-cart-shopping px-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                               
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="item">
-                            <div class=" mx-0">
-                                <div class="row">
-                                    <div class="col-md-6">
-    
-                                        <a href="https://www.w3schools.com/html/mov_bbb.mp4" class="html5lightbox px-0">
-                                            <div>
-                                                <img src="img/home-course.png" alt="" width="169" height="120">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                        <h4 class="text-bold fw-bolder">العمل الحر     </h4>
-                                        <p style="background-color: #de6e45;" class="tag ">
-                                            مدة الدورة ساعتين
-                                        </p>
-                                        <p style="background-color: #922980;" class="tag border   mt-2">
-                                         التسويق
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="text col">
-                                
-                                    <div>
-                                        <div class="row client mt-3">
-                                            <div class="row align-items-center gap-2 col-md-7">
-                                                <div class="col-3">
-                                                    <img style="width: 40px;" class="imges-circle-small" src="img/client.png" alt="" >
-                                                </div>
-                                                <div class="info col-8">
-                                                    <small>Ahmed Salman</small>
-                                                </div>
-                                            </div>
-                                            <div style="border: 1px solid #de6e45" class="text-center  mt-2 col-md-5">
-    
-                                                <a style="color: #de6e45; ;" href="#" class=" grean fw-bolder text-center p-2">
-                                                    <span>
-                                                  
-                                                        500 
-                                                        <span>
-                                                            درهم                             
-                                                        </span>
-                                                       
-                                                    </span>
-                                                    
-                                                   
-                                                   </a>
-                                            </div>
-                                        </div>
-                                    
-                                        <div style="background-color: #de6e45;"  class="text-center border mt-2 p-1">
-    
-                                            <a  href="#" class=" grean fw-bolder text-center p-2 text-white">
-                                                شراء
-                                                <i class="fa-solid fa-cart-shopping px-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                               
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="item">
-                            <div class=" mx-0">
-                                <div class="row">
-                                    <div class="col-md-6">
-    
-                                        <a href="https://www.w3schools.com/html/mov_bbb.mp4" class="html5lightbox px-0">
-                                            <div>
-                                                <img src="img/home-course.png" alt="" width="169" height="120">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-6">
-
-                                        <h4 class="text-bold fw-bolder">العمل الحر     </h4>
-                                        <p style="background-color: #de6e45;" class="tag ">
-                                            مدة الدورة ساعتين
-                                        </p>
-                                        <p style="background-color: #922980;" class="tag border   mt-2">
-                                         التسويق
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="text col">
-                                
-                                    <div>
-                                        <div class="row client mt-3">
-                                            <div class="row align-items-center gap-2 col-md-7">
-                                                <div class="col-3">
-                                                    <img style="width: 40px;" class="imges-circle-small" src="img/client.png" alt="" >
-                                                </div>
-                                                <div class="info col-8">
-                                                    <small>Ahmed Salman</small>
-                                                </div>
-                                            </div>
-                                            <div style="border: 1px solid #de6e45" class="text-center  mt-2 col-md-5">
-    
-                                                <a style="color: #de6e45; ;" href="#" class=" grean fw-bolder text-center p-2">
-                                                    <span>
-                                                  
-                                                        500 
-                                                        <span>
-                                                            درهم                             
-                                                        </span>
-                                                       
-                                                    </span>
-                                                    
-                                                   
-                                                   </a>
-                                            </div>
-                                        </div>
-                                    
-                                        <div style="background-color: #de6e45;"  class="text-center border mt-2 p-1">
-    
-                                            <a  href="#" class=" grean fw-bolder text-center p-2 text-white">
-                                                شراء
-                                                <i class="fa-solid fa-cart-shopping px-2"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                               
-                                </div>
-                            </div>
-
-                        </div>
-                    </div> -->
-          </div>
-        </div>
-
-        <!-- <div class="row riadiat-numbers">
-                <h2>
-                    منصتنا في أرقام
-                </h2>
-                <ul class="nav nav-pills nav-justified">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-incubator-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-incubator" type="button" role="tab" aria-controls="pills-incubator"
-                            aria-selected="true">ادارة الاعمال </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-consulting-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-consulting" type="button" role="tab" aria-controls="pills-consulting"
-                            aria-selected="false">التصميم </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-network-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-network" type="button" role="tab" aria-controls="pills-network"
-                            aria-selected="false">البرمجيات </button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-academy-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-academy" type="button" role="tab" aria-controls="pills-academy"
-                            aria-selected="false">الالكترونيات</button>
-                    </li>
-
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-incubator" role="tabpanel"
-                        aria-labelledby="pills-incubator-tab">
-                        <div class="row row-cols-2 m-0 justify-content-between">
-                            <div class="text">
-                                <div class="row row-cols-3">
-                                    <div class="text-center">
-                                        <h3>15+</h3>
-                                        <p>اشتراك في برامجنا</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>500+</h3>
-                                        <p>ساعة تدربية</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>80+</h3>
-                                        <p>اشتراك في الدورات</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>12+</h3>
-                                        <p>مجال تدريبي</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>7,000</h3>
-                                        <p>حاضرة</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <picture>
-                                <source srcset="img/numbers-1.png">
-                                <img src="img/numbers-1.png" alt="">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-consulting" role="tabpanel"
-                        aria-labelledby="pills-consulting-tab">
-                        <div class="row row-cols-2 m-0 justify-content-between">
-                            <div class="text">
-                                <div class="row row-cols-3">
-                                    <div class="text-center">
-                                        <h3>15+</h3>
-                                        <p>اشتراك في برامجنا</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>500+</h3>
-                                        <p>ساعة تدربية</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>80+</h3>
-                                        <p>اشتراك في الدورات</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>12+</h3>
-                                        <p>مجال تدريبي</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>7,000</h3>
-                                        <p>حاضرة</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <picture>
-                                <source srcset="img/numbers-2.png">
-                                <img src="img/numbers-2.png" alt="">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-network" role="tabpanel" aria-labelledby="pills-network-tab">
-                        <div class="row row-cols-2 m-0 justify-content-between">
-                            <div class="text">
-                                <div class="row row-cols-3">
-                                    <div class="text-center">
-                                        <h3>15+</h3>
-                                        <p>اشتراك في برامجنا</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>500+</h3>
-                                        <p>ساعة تدربية</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>80+</h3>
-                                        <p>اشتراك في الدورات</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>12+</h3>
-                                        <p>مجال تدريبي</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>7,000</h3>
-                                        <p>حاضرة</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <picture>
-                                <source srcset="img/numbers-3.png">
-                                <img src="img/numbers-3.png" alt="">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-academy" role="tabpanel" aria-labelledby="pills-academy-tab">
-                        <div class="row row-cols-2 m-0 justify-content-between">
-                            <div class="text">
-                                <div class="row row-cols-3">
-                                    <div class="text-center">
-                                        <h3>15+</h3>
-                                        <p>اشتراك في برامجنا</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>500+</h3>
-                                        <p>ساعة تدربية</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>80+</h3>
-                                        <p>اشتراك في الدورات</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>12+</h3>
-                                        <p>مجال تدريبي</p>
-                                    </div>
-                                    <div class="text-center">
-                                        <h3>7,000</h3>
-                                        <p>حاضرة</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <picture>
-                                <source srcset="img/numbers-4.png">
-                                <img src="img/numbers-4.png" alt="">
-                            </picture>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-store" role="tabpanel" aria-labelledby="pills-store-tab">...
-                    </div>
-                </div>
-            </div> -->
+          
       </div>
      
         <section class="testmon">
             <div class="wrapper">
                 <h1 >كيفية التسجيل ؟</h1>
-                <div class="timeline">
-                  <dl class="timeline--entry">
+                <div class="timeline" >
+                  <dl class="timeline--entry" data-aos="fade-up" data-aos-duration="1000" >      
                     <dt class="timeline--entry__title">ابحث عن الدورات التي تحتاجها
                     </dt>
                     <dd class="timeline--entry__detail">من قائمة الدورات في الشريط العلوي اختر الدروة التي تحتاجها ثم اضغط عليها
                     </dd>
                   </dl>
-                  <dl class="timeline--entry">
+                  <dl class="timeline--entry" data-aos="fade-up" data-aos-duration="1000"      >
                     <dt class="timeline--entry__title">شاهد عينة من الدروات
                     </dt>
                     <dd class="timeline--entry__detail">بعض الدورات يتاح لك قبل التسجيل فيها أن تشاهد درساً للاطّلاع والتأكد من جودة الاتصال لديك ومعرفة طريقة الشرح مثل دورة الاستب ودورات القدرات</dd>
                   </dl>
-                  <dl class="timeline--entry">
+                  <dl class="timeline--entry" data-aos="fade-up" data-aos-duration="1000" >      
                     <dt class="timeline--entry__title">اشترك بالدورة</dt>
                     <dd class="timeline--entry__detail">من خلال الضغط على شراء هذه الدورة ستنتقل لتفاصيل الفاتورة قم بتعبئة البيانات ثم اضغط على التالي</dd>
                   </dl>
-                  <dl class="timeline--entry">
+                  <dl class="timeline--entry" data-aos="fade-up" data-aos-duration="1000"      >
                     <dt class="timeline--entry__title">مراجعة الطلب</dt>
                     <dd class="timeline--entry__detail">تأكد من الدورة المطلوبة ثم اضغط على التالي
                     </dd>
                   </dl>
-                  <dl class="timeline--entry">
+                  <dl class="timeline--entry" data-aos="fade-up" data-aos-duration="1000" >      
                     <dt class="timeline--entry__title">تفاصيل الدفع</dt>
                     <dd class="timeline--entry__detail">قم باختيار طريقة الدفع حسب اختيارك ( مدى - فيزا - حوالة مصرفية - سداد ) ثم اضغط على اشترك بالدورة الآن وقم بتعبئة بيانات بطاقة مدى أو فيزا أو بياناتك في خدمة سداد ثم اضغط ادفع</dd>
                   </dl>
@@ -1193,6 +853,80 @@
       </div>
     </footer>
 
+
+    <!-- Button trigger modal -->
+
+<!-- Modal login -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-1" id="staticBackdropLabel">تسجيل الدخول </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <form action="">
+          <div>
+            <label for ="email"></label>
+            <input type="email" id="email" placeholder="ادخل الايميل الخاص بك "  class="border">
+          </div>
+          <div>
+            <label for ="password"></label>
+            <input type="password" id="password" placeholder="ادخل كلمة السر الخاصه بك" class="border" >
+          </div>
+          <div class="form-check mt-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+             تذكرني
+            </label>
+          </div>
+          <div class="text-center">
+
+            <button type="submit" class="btn-primary mt-4 m-auto p-2">تسجيل الدخول </button>
+          </div>
+          <div>
+            <a href="" style="color:#922980  " class="fw-bolder"> هل نسيت كلمة السر ؟ </a>
+          </div>
+        </form>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+<!--  regester -->
+<div class="modal fade mt-3" id="staticBackdropRegester" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropRegester" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered mt-5">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-1" id="staticBackdropRegester">تسجيل  </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <form action="">
+          <div>
+            <label for ="text"></label>
+            <input type="text" id="text" placeholder="  اسمك "  class="border">
+          </div>
+          <div>
+            <label for ="email"></label>
+            <input type="email" id="email" placeholder="ادخل الايميل الخاص بك "  class="border">
+          </div>
+          <div>
+            <label for ="password"></label>
+            <input type="password" id="password" placeholder="ادخل كلمة السر الخاصه بك" class="border" >
+          </div>
+          <div class="text-center">
+
+            <button type="submit" class="btn-primary mt-4 m-auto p-2">تسجيل  </button>
+          </div>
+    
+        </form>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
     <script src="js/lightbox.js"></script>
@@ -1206,7 +940,10 @@
 
     <!-- Main script file -->
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script>
+      AOS.init();
       
 var topBTN = document.getElementById("header-nav-bar")
 var logo  = document.getElementById('logo')
@@ -1225,10 +962,10 @@ window.addEventListener("scroll",function(){
         if(document.documentElement.scrollTop > 500){
              topBTN.classList.add("header-bottom")
              logo.src = 'img/Logo-04.png'
-             navItem.classList.add("test")
+            //  navItem.classList.add("test")
         }else{
             topBTN.classList.remove("header-bottom")
-            navItem.classList.remove("test")
+            // navItem.classList.remove("test")
             logo.src = 'img/Logo-01.png'
         }
     }

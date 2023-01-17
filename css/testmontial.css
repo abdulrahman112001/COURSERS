@@ -35,6 +35,7 @@
   top: 0;
   left: -3.313em;
   border-radius: 40px 40px;
+  display: none;
 }
 
 .testmon .timeline--entry {
@@ -47,7 +48,7 @@
 
 
 .testmon .timeline--entry__title {
-  color: #922980;
+  color: #eda426;
   /* background-color: #ec407a; */
   /* font-family: "Oswald", Georgia, Cambria, "Times New Roman", Times, serif; */
   font-weight: 900;
@@ -136,8 +137,8 @@
       display: none;
     }
     .testmon   .timeline--entry:nth-of-type(even):before {
-      right: 41.5%;
-      top: -39%;
+      right: -20px;
+      top: -22px;
     }
   }
 }
@@ -147,8 +148,8 @@
   @supports (display: grid){
 
     .testmon .timeline--entry:nth-of-type(odd):before {
-      right: calc(50% - 48px);
-      top: -40px;
+      right: -20px;
+      top: -22px;
     }
   }
 }
